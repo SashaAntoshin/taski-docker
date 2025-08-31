@@ -192,4 +192,4 @@ jobs:
             # Выполняет миграции и сбор статики
             sudo docker compose -f docker-compose.production.yml exec -T backend python manage.py migrate
             sudo docker compose -f docker-compose.production.yml exec -T backend python manage.py collectstatic
-            sudo docker compose -f docker-compose.production.yml exec -T backend cp -r /app/collected_static/. /backend_static/static/ проверь тут все
+            sudo docker compose -f docker-compose.production.yml exec -T backend cp -r /app/collected_static/. /backend_static/static/
